@@ -57,12 +57,12 @@ export default function SignupPage() {
             ].map(({ key, label, placeholder, type }) => (
               <div key={key}>
                 <label className="block text-xs font-medium text-slate-400 mb-1.5">{label}</label>
-                <input type={type || 'text'} className="input-field" placeholder={placeholder} value={(form as Record<string,string>)[key]} onChange={set(key)} required />
+                <input type={type || 'text'} className="input-field text-black" placeholder={placeholder} value={(form as Record<string,string>)[key]} onChange={set(key)} required />
               </div>
             ))}
             <div>
               <label className="block text-xs font-medium text-slate-400 mb-1.5">Address</label>
-              <input type="text" className="input-field" placeholder="123 Main Street, Block A" value={form.address} onChange={set('address')} required />
+              <input type="text" className="input-field text-black" placeholder="123 Main Street, Block A" value={form.address} onChange={set('address')} required />
             </div>
 
             <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2 mt-2" disabled={loading}>

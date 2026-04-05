@@ -101,6 +101,9 @@ export default function LoginPage() {
             Register your flat
           </Link>
         </p>
+        {/* <Link href="/forgot-password" className="text-xs text-slate-400 hover:text-brand-400">
+  Forgot password?
+</Link> */}
       </div>
     </div>
   );
